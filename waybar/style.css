@@ -1,0 +1,131 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(24, 24, 24, 0);
+    color: #eff0f1;  /* match Kitty’s foreground */
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #4b4b4b;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #4285F4;
+}
+
+#workspaces button.focused {
+    color: #eff0f1;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #5293E2;
+    color: #11111b; 
+    border-radius: 10px;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#custom-bluetooth,
+#backlight {
+    background: #181818;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+    /* border: 1px solid #181825; */
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#custom-bluetooth {
+    border-radius: 0 12px 12px 0; /* right-rounded corners */
+}
+
+#pulseaudio {
+    color: #eff0f1;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: #181818;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#memory {
+    color: #eff0f1;    
+    border-radius: 10px 0px 0px 10px;
+}
+
+#cpu {
+    color: #eff0f1;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #eff0f1;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 5px;
+    border-right: 0px;
+}
+
+#network {
+    color:  #eff0f1;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+
+#pulseaudio.microphone {
+    color: #eff0f1;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 5px;
+}
+
+#battery {
+    color:#eff0f1;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}

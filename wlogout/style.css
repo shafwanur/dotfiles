@@ -1,0 +1,71 @@
+* {
+    font-family: JetBrains Mono, monospace;
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+}
+
+window {
+    background-color: #181818;
+}
+
+button {
+    background-color: #181818;
+    border-style: solid;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    margin: 15px;
+
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #5293E2;
+}
+
+
+/* Logout */
+#logout {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#logout:hover {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/logout-hover.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    color: #181818;
+}
+
+/* Shutdown */
+#shutdown {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/power.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#shutdown:hover {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/power-hover.png"), url("/usr/local/share/wlogout/icons/shutdown.png")); 
+    color: #181818;
+}
+
+/* Suspend */
+#suspend {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/sleep.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#suspend:hover {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/sleep-hover.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+    color: #181818;
+}
+
+/* Reboot */
+#reboot {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/restart.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("/home/shaf/.config/assets/wlogout/assets/restart-hover.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    color: #181818;
+}
