@@ -21,10 +21,10 @@
       import * as zebar from 'https://esm.sh/zebar@3.0';
 
       const providers = zebar.createProviderGroup({
-        network: { type: 'network' },
+        // network: { type: 'network' },
         glazewm: { type: 'glazewm' },
         cpu: { type: 'cpu' },
-        date: { type: 'date', formatting: 'dd.MM.yyyy EEE' },
+        // date: { type: 'date', formatting: 'LLL dd EEE' },
         time: { type: 'date', formatting: 't' },
         battery: { type: 'battery' },
         memory: { type: 'memory' },
@@ -106,7 +106,6 @@
           <div className="app">
             <div className="left">
               <i className="logo nf nf-md-microsoft_windows"></i>
-              <div className="date">{output.date?.formatted}</div>
               {output.glazewm && (
                 <div className="workspaces">
                   {output.glazewm.currentWorkspaces.map((workspace) => (
@@ -160,11 +159,13 @@
                 </>
               )}
 
-              {output.network && (
-                <div className="network">
-                  {getNetworkIcon(output.network)}
-                </div>
-              )}
+              {
+              //output.network && (
+              //  <div className="network">
+              //    {getNetworkIcon(output.network)}
+              //  </div>
+              // )
+              }
 
               {output.memory && (
                 <div className="memory">
