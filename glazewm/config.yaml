@@ -121,36 +121,36 @@ window_behavior:
 
 workspaces:
   - name: '1'
-    bind_to_monitor: 0
-    keep_alive: true
-  - name: '2'
-    bind_to_monitor: 0
-    keep_alive: false
-
-  - name: '3'
     bind_to_monitor: 1
-    keep_alive: true
-  - name: '4'
-    bind_to_monitor: 1
-    keep_alive: false
-  - name: '5'
-    bind_to_monitor: 1
-    keep_alive: false
-  - name: '6'
-    bind_to_monitor: 1
-    keep_alive: false
-
-  - name: '7'
-    bind_to_monitor: 2
     keep_alive: true
   - name: '8'
-    bind_to_monitor: 2
+    bind_to_monitor: 1
     keep_alive: false
   - name: '9'
+    bind_to_monitor: 1
+    keep_alive: false
+
+  - name: '2'
+    bind_to_monitor: 2
+    keep_alive: true
+  - name: '3'
     bind_to_monitor: 2
     keep_alive: false
-  - name: '10'
+  - name: '4'
     bind_to_monitor: 2
+    keep_alive: false
+  - name: '5'
+    bind_to_monitor: 2
+    keep_alive: false
+
+  - name: '6'
+    bind_to_monitor: 0
+    keep_alive: true
+  - name: '7'
+    bind_to_monitor: 0
+    keep_alive: false
+  - name: '10'
+    bind_to_monitor: 0
     keep_alive: false
 
 window_rules:
@@ -224,6 +224,14 @@ keybindings:
   - commands: ['resize --height -2%']
     bindings: ['alt+i']
 
+  # Toggle zebar
+    shutdown_commands: 
+  - commands: ['shell-exec zebar.exe']
+    bindings: ['alt+escape']
+
+  - commands: ['shell-exec taskkill /IM zebar.exe /F']
+    bindings: ['alt+shift+escape']
+
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
   # the name 'resize'.
@@ -279,7 +287,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec wt']
+  - commands: ['shell-exec alacritty']
     bindings: ['alt+t']
 
   # TODO: did not work
