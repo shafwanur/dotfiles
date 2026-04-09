@@ -120,38 +120,37 @@ window_behavior:
       shown_on_top: false
 
 workspaces:
-  - name: '1'
+  - name: '1' # browser
+    bind_to_monitor: 0        # LAPTOP
+    keep_alive: true
+  - name: '2' # code
     bind_to_monitor: 1
     keep_alive: true
+  - name: '3' # code
+    bind_to_monitor: 1
+    keep_alive: false
+  - name: '4'
+    bind_to_monitor: 1
+    keep_alive: false
+  - name: '5'
+    bind_to_monitor: 1
+    keep_alive: false
+  - name: '6' # teams
+    bind_to_monitor: 0        # LAPTOP
+    keep_alive: false
+  - name: '7' # teams call / screen share
+    bind_to_monitor: 1
+    keep_alive: false
   - name: '8'
     bind_to_monitor: 1
     keep_alive: false
   - name: '9'
     bind_to_monitor: 1
     keep_alive: false
-
-  - name: '2'
-    bind_to_monitor: 2
-    keep_alive: true
-  - name: '3'
-    bind_to_monitor: 2
-    keep_alive: false
-  - name: '4'
-    bind_to_monitor: 2
-    keep_alive: false
-  - name: '5'
-    bind_to_monitor: 2
+  - name: '10' # spotify
+    bind_to_monitor: 0        # LAPTOP
     keep_alive: false
 
-  - name: '6'
-    bind_to_monitor: 0
-    keep_alive: true
-  - name: '7'
-    bind_to_monitor: 0
-    keep_alive: false
-  - name: '10'
-    bind_to_monitor: 0
-    keep_alive: false
 
 window_rules:
   - commands: ['ignore']
@@ -329,9 +328,9 @@ keybindings:
   - commands: ['focus --monitor 0']
     bindings: ['alt+x']
   - commands: ['focus --monitor 1']
-    bindings: ['alt+a']
-  - commands: ['focus --monitor 2']
     bindings: ['alt+d']
+  # - commands: ['focus --monitor 2']
+  #   bindings: ['alt+d']
   
 
   # Move the focused window's parent workspace to a monitor in a given
